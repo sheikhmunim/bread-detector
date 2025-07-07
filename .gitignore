@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.h5
+*.tflite
+*.ipynb_checkpoints
+
+# Data
+model/data/train/*
+model/data/val/*
+model/data/test/*
+!model/data/.gitkeep
+
+# Virtual Environments
+venv/
+env/
+
+# OS Files
+.DS_Store
+
+# Node/React/Flutter
+node_modules/
+build/
+dist/
+*.apk
+*.ipa
