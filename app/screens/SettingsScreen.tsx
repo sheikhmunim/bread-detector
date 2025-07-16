@@ -1,15 +1,32 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { ScrollView, View, StyleSheet, Text } from "react-native";
+import ThemeToggle from "../components/Settings/ThemeToggle";
+import AboutCard from "../components/Settings/AboutCard";
+import LogoutButton from "../components/Settings/LogoutButton";
 
-const SettingsScreen = () => (
-  <View style={styles.container}>
-    <Text style={styles.text}>Settings Page</Text>
-  </View>
-);
+const SettingsScreen = () => {
+  return (
+    <ScrollView contentContainerStyle={styles.container}>
+      <Text style={styles.heading}>Settings</Text>
+      <ThemeToggle />
+      <AboutCard />
+      <LogoutButton />
+    </ScrollView>
+  );
+};
 
 const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: "center", justifyContent: "center" },
-  text: { fontSize: 20 },
+  container: {
+    padding: 16,
+    gap: 16,
+    backgroundColor: "#fff",
+    flexGrow: 1,
+  },
+  heading: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 12,
+  },
 });
 
 export default SettingsScreen;

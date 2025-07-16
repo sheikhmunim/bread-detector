@@ -4,6 +4,7 @@ export type RootStackParamList = {
   Login: undefined;
   Home: undefined;
   Settings: undefined;
+  Search: undefined;
 };
 
 export type HomeScreenProps = NativeStackScreenProps<
